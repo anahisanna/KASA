@@ -1,0 +1,21 @@
+.gallery {
+    max-width: 1240px;
+    background-color: #F6F6F6;
+    padding: 40px;
+    border-radius: 25px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1120px;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}

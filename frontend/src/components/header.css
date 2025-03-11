@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    max-width: 1240px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 68px;
+    /* ✅ Asegura que el logo tenga la altura exacta */
+}
+
+.nav {
+    display: flex;
+    gap: 57px;
+    /* ✅ Espaciado entre los enlaces */
+}
+
+.nav-link {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 143%;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
