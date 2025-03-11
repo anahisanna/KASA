@@ -11,13 +11,12 @@
 
 .logo {
     height: 68px;
-    /* ✅ Asegura que el logo tenga la altura exacta */
 }
 
 .nav {
     display: flex;
     gap: 57px;
-    /* ✅ Espaciado entre los enlaces */
+
 }
 
 .nav-link {
