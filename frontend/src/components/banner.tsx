@@ -1,4 +1,4 @@
-import "./Banner.css"; // Importar estilos
+import "./Banner.css";
 import bannerImg from "../assets/banner.jpg";
 const Banner = () => {
     return (

@@ -1,4 +1,4 @@
-import logo from "../assets/logo-white.jpg";
+import logo from "../assets/kasa_white.svg";
 import "./footer.css";
 
 const Footer = () => {
