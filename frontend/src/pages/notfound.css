@@ -1,0 +1,50 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    gap: 139px;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* 404 */
+.notfound-code {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 288px;
+    text-align: center;
+    color: #ff6060;
+    margin: 0;
+    width: 597px;
+    height: 263px;
+}
+
+/* Oups! La page... */
+.notfound-message {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 143%;
+    color: #ff6060;
+    width: 875px;
+    height: 51px;
+}
+
+/* Lien "Retourner sur la page d’accueil" */
+.notfound-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 143%;
+    text-decoration: underline;
+    color: black;
+    width: 284px;
+    height: 26px;
+}
+
+.notfound-link:hover {
+    color: black
+}

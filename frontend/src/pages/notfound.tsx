@@ -1,22 +1,11 @@
-/*import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import "./notfound.css";
 const NotFound = () => {
     return (
-        <div>
-            <h1>404 - Página no encontrada</h1>
-            <p>Lo sentimos, la página que buscas no existe.</p>
-            <Link to="/">Volver a Inicio</Link>
-        </div>
-    );
-};
-
-export default NotFound;
-*/
-const NotFound = () => {
-    return (
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
-            <h1>404 - Page Not Found</h1>
-            <p>La página que buscas no existe.</p>
+        <div className="notfound-container">
+            <h1 className="notfound-code">404</h1>
+            <p className="notfound-message">Oups! La page que vous demandez n'existe pas.</p>
+            <Link to="/" className="notfound-link">Retourner sur la page d’accueil</Link>
         </div>
     );
 };
