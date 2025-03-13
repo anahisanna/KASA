@@ -41,3 +41,15 @@
     padding: 10px 20px;
     z-index: 2;
 }
+
+.about-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 25px;
+    z-index: 1;
+}

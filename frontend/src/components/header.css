@@ -1,22 +1,19 @@
 .header {
-    width: 100%;
-    max-width: 1240px;
+    width: 1240px;
     height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin-top: 40px;
 }
 
 .logo {
-    height: 68px;
+    height: 40px;
 }
 
 .nav {
     display: flex;
     gap: 57px;
-
 }
 
 .nav-link {
@@ -28,4 +25,9 @@
 
 .nav-link.active {
     text-decoration: underline;
+
+}
+
+.nav-link:hover {
+    color: black;
 }

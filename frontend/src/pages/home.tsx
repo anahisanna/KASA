@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import Banner from "../components/Banner";
-import Card from "../components/Card";
+import Banner from "../components/banner";
+import Card from "../components/card";
+import homeBanner from "../assets/banner.jpg"; // Imagen específica para Home
 import "./Home.css";
 
 // Définition du type Property qui représente les données de chaque propriété
@@ -25,7 +26,8 @@ const Home = () => {
 
     return (
         <div className="home">
-            <Banner />
+            {/* 📌 Ahora pasamos la imagen correcta */}
+            <Banner image={homeBanner} title="Chez vous, partout et ailleurs" />
             <div className="gallery">
                 <div className="gallery-container">
                     {/* Boucle sur les propriétés pour afficher chaque carte */}
@@ -39,4 +41,3 @@ const Home = () => {
 };
 
 export default Home; // Exportation du composant Home pour être utilisé dans l'application
-
