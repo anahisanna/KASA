@@ -1,0 +1,173 @@
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    height: 415px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property {
+    width: 1240px;
+    margin-top: 40px;
+    min-height: 100vh;
+    /* 🔹 Que el contenido crezca y ocupe la pantalla completa */
+
+}
+
+.property-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.property-location {
+    font-size: 18px;
+    color: #ff6060;
+}
+
+/* Etiquetas */
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #ff6060;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Información del anfitrión */
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* 🔥 Contenedor de los tags */
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* 🔥 Estilo de cada tag */
+.tag {
+    background-color: #FF6060;
+    color: white;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 15px;
+    width: 115px;
+    height: 20px;
+    text-align: center;
+}
+
+/* Collapse Sections (Detalles) */
+.collapse-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/*  Contenedor de los Collapse en dos columnas */
+.collapses {
+    display: flex;
+    gap: 76px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 52px;
+}
+
+/*  Cada Collapse ocupa el 50% del ancho */
+.collapses .collapse {
+    flex: 1;
+    min-width: 48%;
+}
+
+/* 🔥 Contenedor de título, host y rating */
+.property-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 🔥 Detalles de la propiedad */
+.property-details {
+    flex: 1;
+}
+
+/* 🔥 Estilos para etiquetas (Tags) */
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #ff6060;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* 🔥 Contenedor de anfitrión y rating */
+.host-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* 🔥 Anfitrión */
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.host p {
+    font-weight: bold;
+    color: #ff6060;
+}
+
+.host-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 🔥 Rating (Estrellas ⭐) */
+.rating {
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 20px;
+    color: lightgray;
+}
+
+.star.filled {
+    color: #ff6060;
+}

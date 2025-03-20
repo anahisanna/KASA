@@ -1,7 +1,7 @@
 .collapse {
     width: 100%;
     max-width: 1023px;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     margin: 20px auto;
 }
