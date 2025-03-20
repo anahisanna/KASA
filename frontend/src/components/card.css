@@ -24,3 +24,12 @@
     color: white;
     font-weight: bold;
 }
+
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
