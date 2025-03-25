@@ -48,3 +48,32 @@
 .notfound-link:hover {
     color: black
 }
+
+/***** MEDIA *****/
+@media screen and (max-width: 768px) {
+    .notfound-container {
+        width: 335px;
+        gap: 113px;
+        padding-top: 92px;
+        height: auto;
+    }
+
+    .notfound-code {
+        font-size: 96px;
+        width: 198px;
+        height: 99px;
+    }
+
+    .notfound-message {
+        font-size: 18px;
+        line-height: 25px;
+        width: 260px;
+        height: auto;
+    }
+
+    .notfound-link {
+        font-size: 14px;
+        width: auto;
+        height: auto;
+    }
+}

@@ -1,3 +1,7 @@
+.home {
+    padding: 40px;
+}
+
 .gallery {
     max-width: 1240px;
     background-color: #F6F6F6;
@@ -18,4 +22,28 @@
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
+}
+
+/***** MEDIA *****/
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        max-width: 100%;
+        padding: 0;
+        margin: 20px auto;
+        background-color: transparent;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 0;
+        justify-items: center;
+    }
+
+    .card {
+        width: 335px;
+        height: 255px;
+    }
 }

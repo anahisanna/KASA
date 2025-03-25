@@ -32,3 +32,37 @@
 .nav-link:hover {
     color: black;
 }
+
+/***** MEDIA *****/
+@media screen and (max-width: 768px) {
+    .header {
+        width: 335px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        margin: 20px auto 0 auto;
+    }
+
+    .logo {
+        height: 100%;
+        width: auto;
+    }
+
+    .nav {
+        display: flex;
+        gap: 26px;
+        margin-left: auto;
+        /* 💡 empuja la nav a la derecha */
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 12px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    .nav-link.active {
+        text-decoration: underline;
+    }
+}

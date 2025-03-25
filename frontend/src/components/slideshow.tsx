@@ -20,17 +20,29 @@ const Slideshow = ({ images = [], title, location }: { images: string[]; title: 
 
     return (
         <div className="slideshow">
-            {/* Botones de navegación */}
-            <button className="prev" onClick={prevSlide}>&#10094;</button>
-            <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="slideshow-img" />
-            <button className="next" onClick={nextSlide}>&#10095;</button>
+            {/* Botones de navegación SOLO si hay más de una imagen */}
+            {images.length > 1 && (
+                <button className="prev" onClick={prevSlide}>&#10094;</button>
+            )}
+
+            <img
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex + 1}`}
+                className="slideshow-img"
+            />
+
+            {images.length > 1 && (
+                <button className="next" onClick={nextSlide}>&#10095;</button>
+            )}
 
             {/* Indicador de Slide */}
-            <div className="slide-indicator">
-                {currentIndex + 1} / {images.length}
-            </div>
+            {images.length > 1 && (
+                <div className="slide-indicator">
+                    {currentIndex + 1} / {images.length}
+                </div>
+            )}
 
-            {/* 🔥 Título y Ubicación dentro del Slideshow */}
+            {/* Título y ubicación */}
             <div className="slideshow-info">
                 <h2>{title}</h2>
                 <p>{location}</p>
@@ -40,3 +52,4 @@ const Slideshow = ({ images = [], title, location }: { images: string[]; title: 
 };
 
 export default Slideshow;
+

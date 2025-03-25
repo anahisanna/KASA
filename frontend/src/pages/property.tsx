@@ -17,7 +17,7 @@ type PropertyData = {
 };
 
 const Property = () => {
-    const { id } = useParams(); // ✅ Obtiene el ID de la URL
+    const { id } = useParams(); //  Obtiene el ID de la URL
     const [property, setProperty] = useState<PropertyData | null>(null);
 
     useEffect(() => {
@@ -44,13 +44,13 @@ const Property = () => {
             {/* Slideshow */}
             <Slideshow images={property.pictures} />
 
-            {/* 🔥 Contenedor de título, ubicación, anfitrión y rating */}
+            {/* Contenedor de título, ubicación, anfitrión y rating */}
             <div className="property-info">
                 <div className="property-details">
                     <h3>{property.title}</h3>
-                    <p>{property.location}</p>
+                    <p className="property-location ">{property.location}</p>
 
-                    {/* 🔥 Etiquetas (Tags) */}
+                    {/* Etiquetas (Tags) */}
                     <div className="tags">
                         {property.tags.map((tag, index) => (
                             <span key={index} className="tag">{tag}</span>
@@ -58,7 +58,7 @@ const Property = () => {
                     </div>
                 </div>
 
-                {/* 🔥 Host y Rating */}
+                {/* Host y Rating */}
                 <div className="host-rating">
                     {/* Anfitrión */}
                     <div className="host">
@@ -66,7 +66,7 @@ const Property = () => {
                         <img src={property.host.picture} alt={property.host.name} className="host-img" />
                     </div>
 
-                    {/* Rating en estrellas ⭐ */}
+                    {/* Rating en estrellas */}
                     <div className="rating">
                         {[...Array(5)].map((_, index) => (
                             <span key={index} className={index < Number(property.rating) ? "star filled" : "star"}>★</span>
@@ -74,6 +74,7 @@ const Property = () => {
                     </div>
                 </div>
             </div>
+
 
             {/* 🔥 Contenedor de los Collapse en dos columnas */}
             <div className="collapses">
