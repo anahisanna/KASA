@@ -11,7 +11,6 @@ root.render(
   </React.StrictMode>
 );
 
-// Montar el Footer fuera del root
 const footerRoot = document.getElementById("footer");
 if (footerRoot) {
   ReactDOM.createRoot(footerRoot).render(<Footer />);

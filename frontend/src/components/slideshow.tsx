@@ -1,5 +1,8 @@
 import { useState } from "react";
 import "./Slideshow.css";
+import vectorGauche from "../assets/vector-gauche.png";
+import vectorDroite from "../assets/vector-droite.png";
+
 
 const Slideshow = ({ images = [], title, location }: { images: string[]; title: string; location: string }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,7 +25,9 @@ const Slideshow = ({ images = [], title, location }: { images: string[]; title: 
         <div className="slideshow">
             {/* Botones de navegación SOLO si hay más de una imagen */}
             {images.length > 1 && (
-                <button className="prev" onClick={prevSlide}>&#10094;</button>
+                <button className="prev" onClick={prevSlide}>
+                    <img src={vectorGauche} alt="Précédent" />
+                </button>
             )}
 
             <img
@@ -32,17 +37,18 @@ const Slideshow = ({ images = [], title, location }: { images: string[]; title: 
             />
 
             {images.length > 1 && (
-                <button className="next" onClick={nextSlide}>&#10095;</button>
+                <button className="next" onClick={nextSlide}>
+                    <img src={vectorDroite} alt="Suivant" />
+                </button>
+
             )}
 
-            {/* Indicador de Slide */}
             {images.length > 1 && (
                 <div className="slide-indicator">
                     {currentIndex + 1} / {images.length}
                 </div>
             )}
 
-            {/* Título y ubicación */}
             <div className="slideshow-info">
                 <h2>{title}</h2>
                 <p>{location}</p>

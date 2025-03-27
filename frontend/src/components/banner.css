@@ -20,7 +20,6 @@
     border-radius: 25px;
 }
 
-/* ✅ Capa oscura encima de la imagen */
 .banner::after {
     content: "";
     position: absolute;
