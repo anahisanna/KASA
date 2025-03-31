@@ -28,6 +28,25 @@
     color: black;
 }
 
+.collapse-content {
+    background-color: #F6F6F6;
+    overflow: hidden;
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:
+        max-height 0.4s ease,
+        transform 0.4s ease;
+    padding: 0 20px;
+}
+
+.collapse-content.open {
+    max-height: 500px;
+    /* asegúrate de que sea suficiente */
+    transform: scaleY(1);
+    padding: 15px 20px;
+}
+
 .arrow {
     width: 24px;
     /* ajusta según el tamaño de tu SVG */

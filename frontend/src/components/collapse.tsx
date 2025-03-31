@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./Collapse.css";
 import vectorCollapse from "../assets/vector-collapse.svg";
 
-
 type CollapseProps = {
     title: string;
     content: React.ReactNode;
@@ -20,13 +19,11 @@ const Collapse = ({ title, content }: CollapseProps) => {
                     alt="flèche"
                     className={`arrow ${isOpen ? "open" : ""}`}
                 />
-
             </div>
-            {isOpen && (
-                <div className="collapse-content">
-                    {content}
-                </div>
-            )}
+
+            <div className={`collapse-content ${isOpen ? "open" : ""}`}>
+                {content}
+            </div>
         </div>
     );
 };

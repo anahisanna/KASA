@@ -1,5 +1,5 @@
-import Banner from "../components/Banner"; // Se corrigió la importación con mayúscula
-import Collapse from "../components/Collapse"; // También se aseguró la mayúscula
+import Banner from "../components/banner";
+import Collapse from "../components/collapse";
 import aboutData from "../about.json";
 import aboutBanner from "../assets/a_propos.jpg";
 import "./About.css";

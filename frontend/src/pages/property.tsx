@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import Slideshow from "../components/Slideshow";
-import Collapse from "../components/Collapse";
+import Slideshow from "../components/slideshow";
+import Collapse from "../components/collapse";
 import "./Property.css";
 
 // Type des données de propriété
