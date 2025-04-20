@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import type { UserConfigExport } from 'vitest/config';
 
 const config: UserConfigExport = {
-  base: '', // 🔥 ESTA LÍNEA es la clave para Netlify
+  base: '', // 🔥 Esto debe estar aquí
   plugins: [react()],
   test: {
     globals: true,
