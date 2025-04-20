@@ -1,0 +1,27 @@
+.about-container {
+    padding-bottom: 20px;
+}
+
+/***** MEDIA *****/
+@media screen and (max-width: 768px) {
+    .about {
+        width: 335px;
+        margin: 0 auto;
+        padding: 0%;
+        flex: 1;
+
+    }
+
+    .about-container {
+        padding: 0;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .about-banner {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
